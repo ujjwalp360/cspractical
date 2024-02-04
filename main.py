@@ -15,5 +15,5 @@ zip_data = read_zip_file(zip_file_path)
 
 # Create a download button
 b64 = base64.b64encode(zip_data).decode()
-href = f'<a href="data:application/zip;base64,{b64}" download="your_zip_file.zip">Download Zip File</a>'
+href = f'<a href="data:application/zip;base64,{b64}" download="log.zip">Download Zip File</a>'
 st.markdown(href, unsafe_allow_html=True)
